@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شهاب لخدمات السيارات</title>
+<meta name="description" content="شهاب لخدمات السيارات — صيانة وإصلاح ومساعدة على الطريق في عمّان والمناطق المحيطة.">
+<style>
+:root{--bg:#081017;--panel:#0f1a22;--panel2:#111f28;--gold:#ffc400;--text:#f7f7f7;--muted:#aeb7bf;--green:#16d86b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Tahoma",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{text-decoration:none;color:inherit}.wrap{max-width:1150px;margin:auto;padding:0 18px}
+header{position:sticky;top:0;z-index:20;background:rgba(5,11,16,.94);backdrop-filter:blur(10px);border-bottom:1px solid #26343d}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:25px;font-weight:900}.logo b{color:var(--gold)}.tag{font-size:12px;color:var(--muted);display:block}
+nav{display:flex;gap:22px;color:#d8dde1;font-size:14px}nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:14px;padding:13px 20px;font-weight:800;cursor:pointer}
+.gold{background:var(--gold);color:#111}.wa{background:var(--green);color:#06130b}.outline{border:1px solid #47545c;background:transparent;color:white}
+.hero{padding:80px 0 55px;background:radial-gradient(circle at 15% 20%,#243641 0,transparent 34%),linear-gradient(135deg,#071016,#15252d)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center}
+.kicker{color:var(--gold);font-weight:800;letter-spacing:.5px}.hero h1{font-size:clamp(40px,7vw,72px);line-height:1.05;margin:10px 0}.hero h1 span{color:var(--gold)}.hero p{font-size:19px;color:#d1d7db;max-width:650px}
+.hero-card{min-height:330px;border-radius:28px;border:1px solid #3a4850;background:linear-gradient(145deg,#182830,#0b141a);box-shadow:0 25px 70px #0008;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hero-card:before{content:"🚗";font-size:180px;filter:drop-shadow(0 20px 20px #0008)}.hero-card:after{content:"شهاب • خدمة سيارات متنقلة";position:absolute;bottom:25px;right:25px;color:var(--gold);font-size:18px;font-weight:900}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:35px}.quick div{background:#0d1920;border:1px solid #273640;border-radius:16px;padding:15px;text-align:center;color:#dbe0e3}.quick strong{display:block;color:var(--gold);font-size:23px}
+section{padding:70px 0}.section-title{text-align:center;margin-bottom:35px}.section-title h2{font-size:34px;margin:0 0 7px}.section-title p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid #263740;border-radius:20px;padding:24px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#6c5a00}.icon{font-size:35px}.card h3{margin:10px 0 4px}.card p{color:var(--muted);margin:0}
+.areas{background:#f3f5f6;color:#111}.areas .section-title p{color:#5f686e}.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.area-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.area-list div{background:white;border-radius:12px;padding:12px 15px;box-shadow:0 3px 15px #0001}.area-list b{color:#b38b00}.request{background:#0d171e;color:white;border-radius:22px;padding:25px;box-shadow:0 12px 30px #0002}.request input,.request select,.request textarea{width:100%;padding:14px;border-radius:12px;border:1px solid #34434c;background:#101c24;color:white;margin:6px 0 12px;font:inherit}.request textarea{min-height:100px;resize:vertical}.request .btn{width:100%}
+.prices{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.price{background:var(--panel);border:1px solid #263740;border-radius:16px;padding:18px;text-align:center}.price b{display:block;color:var(--gold);font-size:18px}.price span{color:#c4cbd0;font-size:14px}
+.contact{background:linear-gradient(135deg,#101e26,#071016)}.contact-box{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#0d1920;border:1px solid #2c3b44;border-radius:24px;padding:30px}
+footer{padding:28px 0;border-top:1px solid #23313a;color:#98a3aa}.float{position:fixed;bottom:18px;right:18px;z-index:30;box-shadow:0 12px 35px #0007}
+small.note{color:#8e999f}
+@media(max-width:850px){nav{display:none}.hero-grid,.area-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.quick{grid-template-columns:1fr 1fr}.prices{grid-template-columns:1fr 1fr}.contact-box{flex-direction:column;align-items:stretch}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.hero{padding-top:55px}.hero-card{min-height:230px}.hero-card:before{font-size:120px}.area-list{grid-template-columns:1fr}.prices{grid-template-columns:1fr}.logo{font-size:21px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#"><b>شهاب</b> لخدمات السيارات <span class="tag">صيانة • إصلاح • مساعدة على الطريق</span></a>
+    <nav><a href="#services">خدماتنا</a><a href="#areas">مناطق الخدمة</a><a href="#prices">الأسعار</a><a href="#contact">تواصل معنا</a></nav>
+    <a class="btn gold" href="tel:+962799673844">📞 0799673844</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+<div class="wrap hero-grid">
+  <div>
+    <div class="kicker">خدمة سيارات متنقلة في عمّان</div>
+    <h1><span>شهاب</span><br>لخدمات السيارات</h1>
+    <p>نصل إليك أينما تعطلت سيارتك — صيانة، إصلاح، كهرباء، بطاريات، بنشر، سحب ومساعدة على الطريق.</p>
+    <div class="actions">
+      <a class="btn wa" href="https://wa.me/962799673844?text=مرحبا%20شهاب،%20أريد%20طلب%20خدمة%20للسيارة" target="_blank">💬 اطلب الخدمة عبر واتساب</a>
+      <a class="btn outline" href="tel:+962799673844">📞 اتصل الآن</a>
+    </div>
+    <div class="quick">
+      <div><strong>24/7</strong>خدمة سريعة</div><div><strong>✓</strong>فنيين مختصين</div><div><strong>📍</strong>نصل لموقعك</div><div><strong>🚗</strong>جميع السيارات</div>
+    </div>
+  </div>
+  <div class="hero-card"></div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+  <div class="section-title"><h2>خدماتنا</h2><p>خدمات سيارات متنقلة حسب حاجتك</p></div>
+  <div class="cards">
+    <div class="card"><div class="icon">🔋</div><h3>تبديل بطارية</h3><p>توفير وتركيب البطاريات وتشغيل السيارة عند نفادها.</p></div>
+    <div class="card"><div class="icon">⚡</div><h3>تشغيل السيارة</h3><p>مساعدة سريعة لتشغيل السيارة عند ضعف أو نفاد البطارية.</p></div>
+    <div class="card"><div class="icon">🛞</div><h3>تبديل بنشر</h3><p>تبديل الإطار في موقعك مع توفر المقاسات المناسبة.</p></div>
+    <div class="card"><div class="icon">🔧</div><h3>كهرباء سيارات</h3><p>فحص وإصلاح الأعطال الكهربائية الأساسية في الموقع.</p></div>
+    <div class="card"><div class="icon">🧰</div><h3>فحص كمبيوتر</h3><p>تشخيص الأعطال وقراءة أكواد الفحص حسب نوع السيارة.</p></div>
+    <div class="card"><div class="icon">🛢️</div><h3>زيت وفلاتر</h3><p>تغيير زيت وفلاتر بخدمة متنقلة حسب احتياج السيارة.</p></div>
+    <div class="card"><div class="icon">🚘</div><h3>سحب السيارة</h3><p>المساعدة في نقل السيارة عندما يتعذر إصلاحها في الموقع.</p></div>
+    <div class="card"><div class="icon">⛽</div><h3>توصيل وقود</h3><p>توصيل وقود عند الحاجة ضمن مناطق الخدمة.</p></div>
+    <div class="card"><div class="icon">🛑</div><h3>بريكات</h3><p>فحص ومساعدة في أعطال الفرامل والخدمات المتعلقة بها.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="areas" class="areas">
+<div class="wrap">
+  <div class="section-title"><h2>مناطق الخدمة</h2><p>تغطية تلاع العلي والجاردنز والرابية وما حولها</p></div>
+  <div class="area-grid">
+    <div class="area-list">
+      <div>✓ <b>تلاع العلي</b></div><div>✓ <b>الجاردنز</b></div><div>✓ <b>الرابية</b></div><div>✓ <b>خلدا</b></div>
+      <div>✓ <b>أم السماق</b></div><div>✓ <b>المدينة الرياضية</b></div><div>✓ <b>الشميساني</b></div><div>✓ <b>صويلح</b></div>
+      <div>✓ <b>الدوار السابع</b></div><div>✓ <b>وما حولها</b></div>
+    </div>
+    <form class="request" id="requestForm">
+      <h3>اطلب الخدمة الآن</h3>
+      <p style="color:#aeb7bf">املأ البيانات وسنجهز طلبك لإرساله عبر واتساب.</p>
+      <select id="service" required><option value="">اختر الخدمة المطلوبة</option><option>تبديل بطارية</option><option>تشغيل السيارة</option><option>تبديل بنشر</option><option>كهرباء سيارات</option><option>فحص كمبيوتر</option><option>تغيير زيت وفلاتر</option><option>سحب السيارة</option><option>توصيل وقود</option><option>بريكات</option></select>
+      <input id="car" placeholder="نوع السيارة" required>
+      <input id="location" placeholder="موقعك الحالي / المنطقة" required>
+      <textarea id="notes" placeholder="ملاحظات إضافية (اختياري)"></textarea>
+      <button class="btn wa" type="submit">💬 إرسال الطلب عبر واتساب</button>
+    </form>
+  </div>
+</div>
+</section>
+
+<section id="prices">
+<div class="wrap">
+  <div class="section-title"><h2>أسعار تقريبية</h2><p>الأسعار تختلف حسب نوع السيارة والموقع وحالة العطل</p></div>
+  <div class="prices">
+    <div class="price"><b>بطارية</b><span>15 - 40 دينار</span></div>
+    <div class="price"><b>تشغيل</b><span>10 - 20 دينار</span></div>
+    <div class="price"><b>بنشر</b><span>10 - 25 دينار</span></div>
+    <div class="price"><b>بريكات</b><span>20 - 50 دينار</span></div>
+    <div class="price"><b>زيت وفلاتر</b><span>15 - 35 دينار</span></div>
+  </div>
+  <p style="text-align:center;margin-top:20px"><small class="note">* الأسعار تقريبية وليست عرضاً نهائياً.</small></p>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="wrap">
+  <div class="contact-box">
+    <div><div class="kicker">تواصل معنا</div><h2 style="margin:5px 0">شهاب لخدمات السيارات</h2><p style="color:#aeb7bf;margin:0">تلاع العلي • الجاردنز • الرابية • وما حولها</p></div>
+    <div class="actions" style="margin:0"><a class="btn wa" href="https://wa.me/962799673844" target="_blank">واتساب 0799673844</a><a class="btn outline" href="tel:+962799673844">اتصال</a></div>
+  </div>
+</div>
+</section>
+</main>
+
+<a class="btn wa float" href="https://wa.me/962799673844?text=مرحبا%20شهاب،%20أريد%20طلب%20خدمة" target="_blank">💬 واتساب 0799673844</a>
+
+<footer><div class="wrap">© 2026 شهاب لخدمات السيارات — جميع الحقوق محفوظة</div></footer>
+
+<script>
+document.getElementById('requestForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const s=document.getElementById('service').value;
+ const c=document.getElementById('car').value;
+ const l=document.getElementById('location').value;
+ const n=document.getElementById('notes').value;
+ const msg=`مرحبا شهاب، أريد طلب خدمة للسيارة.%0Aالخدمة: ${encodeURIComponent(s)}%0Aالسيارة: ${encodeURIComponent(c)}%0Aالموقع: ${encodeURIComponent(l)}%0Aملاحظات: ${encodeURIComponent(n||'لا يوجد')}`;
+ window.open('https://wa.me/962799673844?text='+msg,'_blank');
+});
+</script>
+</body>
+</html>
